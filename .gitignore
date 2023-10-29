@@ -4,4 +4,3 @@ dist
 .yalc
 yalc.lock
 build
-.env
