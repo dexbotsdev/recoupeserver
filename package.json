@@ -9,7 +9,7 @@
     "authentication"
   ],
   "scripts": {
-    "start": "npx nodemon src/index.ts",
+    "start": "npx ts-node src/index.ts --omit=dev",
     "start:runtime-keys": "npx ts-node src/using-runtime-keys.ts",
     "start:specific-routes": "npx ts-node src/authenticating-specific-routes.ts",
     "dev": "npx nodemon src/index.ts"
