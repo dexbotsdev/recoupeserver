@@ -29,6 +29,16 @@ const publicRoutes: FastifyPluginCallback = (instance, opts, done) => {
         "This is a public endpoint. Request /protected to test the Clerk auth middleware",
     };
   });
+
+  instance.get("/contractDetails", async (request, reply) => {
+
+
+    return {
+      message:
+        "This is a contractDetails. Request /contractDetails to test the Clerk auth middleware",
+    };
+  });
+
   done();
 };
 
@@ -40,7 +50,7 @@ fastify.register(publicRoutes);
 
 const start = async () => {
   try {
-    await fastify.listen({ port: 3000 });
+    await fastify.listen({ port: 5000 });
   } catch (err) {
     fastify.log.error(err);
     process.exit(1);
