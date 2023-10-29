@@ -20,9 +20,8 @@ const typeNumber = { type: 'number' }; // since i will be using this type a lot
 fastify.register(clerkPlugin);
 
 fastify.get("/", async (req, reply) => {
-  const { userId } = getAuth(req);
-  const user = userId ? await clerkClient.users.getUser(userId) : null;
-  return { user };
+  reply.send('Hello There you are here ');
+
 });
 
 
