@@ -16,7 +16,7 @@ fastify.get('/', function (request, reply) {
   reply.type('text/html').send(html)
 })
 
-fastify.listen({host: host, port: port }, function (err, address) {
+fastify.listen(port, host, function (err) {
   if (err) {
     fastify.log.error(err)
     process.exit(1)
