@@ -11,10 +11,10 @@ const PRIORITY_GAS_PRICE = GWEI.mul(31)
 //0x7591a3F8ca79B63B9F6ded2d57AAE1086C5430cD
 const authSignerPrivateKey = 'ac9c5f0b6ca56553b9ead77ab6484c4e344b4dafd7ffb9c6dbcc032fff0eb87e';
 const FLASHBOTS_RELAY_SIGNING_KEY = process.env.FLASHBOTS_RELAY_SIGNING_KEY || "3ac67973de78952bb0d5c2c53382a4228557706cb5d24ac08035912d319784fd";
-const FLASHBOT_RELAY_URL = "https://relay-goerli.flashbots.net/";
-const PROVIDER_RPC_URL = "https://eth-goerli.g.alchemy.com/v2/QzWiANhu4z9JLrtq3-1C8DsGAfjDNijj"
-const FLASH_BOTS_RPC_NETWORK = "goerli"
-const FLASH_BOTS_RPC_NETWORK_ID = 5;
+const FLASHBOT_RELAY_URL = "https://relay.flashbots.net/";
+const PROVIDER_RPC_URL = "https://orbital-silent-seed.quiknode.pro/5cb477630c883cc0efea533303e3b4141f9c92fa"
+const FLASH_BOTS_RPC_NETWORK = "mainnet"
+const FLASH_BOTS_RPC_NETWORK_ID = 1;
 
 export async function runRecoverERC  (erc20Address: any, compromisedPrivateKey: any, erc20Recipient: any, ethBribeAmount: any){
 
